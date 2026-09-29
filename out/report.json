@@ -1,0 +1,87 @@
+{
+  "root": "examples\\docs",
+  "entry": "index.md",
+  "links": [
+    {
+      "source": "config.md",
+      "line": 3,
+      "order": 1,
+      "target": "getting-started.md",
+      "path": "getting-started.md",
+      "status": "ok"
+    },
+    {
+      "source": "config.md",
+      "line": 5,
+      "order": 2,
+      "target": "../outside.md",
+      "path": "..",
+      "status": "outside_root",
+      "detail": "target escapes the documentation root"
+    },
+    {
+      "source": "getting-started.md",
+      "line": 5,
+      "order": 1,
+      "target": "config.md",
+      "path": "config.md",
+      "status": "ok"
+    },
+    {
+      "source": "getting-started.md",
+      "line": 10,
+      "order": 2,
+      "target": "#setup-2",
+      "path": "getting-started.md",
+      "anchor": "setup-2",
+      "status": "ok"
+    },
+    {
+      "source": "getting-started.md",
+      "line": 12,
+      "order": 3,
+      "target": "index.md#project-handbook",
+      "path": "index.md",
+      "anchor": "project-handbook",
+      "status": "ok"
+    },
+    {
+      "source": "index.md",
+      "line": 3,
+      "order": 1,
+      "target": "getting-started.md#setup",
+      "path": "getting-started.md",
+      "anchor": "setup",
+      "status": "ok"
+    },
+    {
+      "source": "index.md",
+      "line": 5,
+      "order": 2,
+      "target": "config.md",
+      "path": "config.md",
+      "status": "ok"
+    },
+    {
+      "source": "index.md",
+      "line": 16,
+      "order": 3,
+      "target": "does-not-exist.md",
+      "path": "does-not-exist.md",
+      "status": "file_missing",
+      "detail": "no such file"
+    }
+  ],
+  "unreachable": [
+    "orphan.md"
+  ],
+  "counts": {
+    "total_links": 8,
+    "ok": 6,
+    "outside_root": 1,
+    "file_missing": 1,
+    "illegal_target": 0,
+    "anchor_missing": 0,
+    "unreachable": 1
+  }
+}
