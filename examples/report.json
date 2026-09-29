@@ -1,0 +1,73 @@
+{
+  "root": "D:\\codex-phase1\\tasks\\052-markdown-reference-auditor\\b\\examples\\docs",
+  "entry": "index.md",
+  "links": [
+    {
+      "source": "faq.md",
+      "line": 5,
+      "column": 14,
+      "target": "index.md",
+      "path": "index.md",
+      "status": "ok"
+    },
+    {
+      "source": "guide/setup.md",
+      "line": 5,
+      "column": 23,
+      "target": "../faq.md",
+      "path": "../faq.md",
+      "status": "ok"
+    },
+    {
+      "source": "guide/setup.md",
+      "line": 11,
+      "column": 24,
+      "target": "../faq.md#does-not-exist",
+      "path": "../faq.md",
+      "anchor": "does-not-exist",
+      "status": "anchor_missing"
+    },
+    {
+      "source": "guide/setup.md",
+      "line": 13,
+      "column": 19,
+      "target": "../../etc/passwd",
+      "path": "../../etc/passwd",
+      "status": "outside_root"
+    },
+    {
+      "source": "index.md",
+      "line": 3,
+      "column": 26,
+      "target": "guide/setup.md#setup",
+      "path": "guide/setup.md",
+      "anchor": "setup",
+      "status": "ok"
+    },
+    {
+      "source": "index.md",
+      "line": 4,
+      "column": 1,
+      "target": "faq.md",
+      "path": "faq.md",
+      "status": "ok"
+    },
+    {
+      "source": "index.md",
+      "line": 9,
+      "column": 19,
+      "target": "#documentation",
+      "anchor": "documentation",
+      "status": "ok"
+    }
+  ],
+  "unreachable_pages": [
+    "orphan.md"
+  ],
+  "counts": {
+    "anchor_missing": 1,
+    "ok": 5,
+    "outside_root": 1,
+    "unreachable_pages": 1
+  }
+}
